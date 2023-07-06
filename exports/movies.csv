@@ -1,0 +1,24 @@
+id_movie;title;released_at;description;duration;cover;id_category
+1;"Le Parrain";1972-01-01;"Lorem ipsum";186;le-parrain.jpg;1
+2;Scarface;1983-01-01;"Lorem ipsum";120;scarface.jpg;1
+3;"Les Affranchis";1990-01-01;"Lorem ipsum";145;les-affranchis.jpg;1
+4;Heat;1995-01-01;"Lorem ipsum";146;heat.jpg;1
+5;"Die Hard";1988-01-01;"Lorem ipsum";124;die-hard.jpg;2
+6;"Demolition Man";1993-01-01;"Lorem ipsum";89;demolition-man.jpg;2
+7;Taken;2008-01-01;"Lorem ipsum";96;taken.jpg;2
+8;Deadpool;2016-01-01;"Lorem ipsum";97;deadpool.jpg;2
+9;"The Expandables";2010-01-01;"Lorem ipsum";132;the-expandables.jpg;2
+10;Scream;1996-01-01;"Lorem ipsum";78;scream.jpg;3
+11;"Vendredi 13";1980-01-01;"Lorem ipsum";97;vendredi-13.jpg;3
+12;Saw;2005-01-01;"Lorem ipsum";102;saw.jpg;3
+13;"Scary Movie";2000-01-01;"Lorem ipsum";79;scary-movie.jpg;3
+14;"Star Wars IV Un nouvel espoir";1977-01-01;"Lorem ipsum";160;star-wars-iv-un-nouvel-espoir.jpg;4
+15;Alien;1979-01-01;"Lorem ipsum";145;alien.jpg;4
+16;ET;1982-01-01;"Lorem ipsum";95;et.jpg;4
+17;Robocop;1987-01-01;"Lorem ipsum";98;robocop.jpg;4
+18;"The Game";1997-01-01;"Lorem ipsum";96;the-game.jpg;5
+19;"Sixième Sens";1999-01-01;"Lorem ipsum";120;sixieme-sens.jpg;5
+20;"Usual Suspects";1995-01-01;"Lorem ipsum";114;usual-suspects.jpg;5
+21;"Fight Club";1999-01-01;"Lorem ipsum";108;fight-club.jpg;5
+22;Inception;2010-01-01;"Lorem ipsum";107;inception.jpg;5
+23;"Deadpool 2";1019-02-19;"Lorem ipsum";93;deadpool-2.jpg;2
