@@ -23,6 +23,7 @@
         
         return $movies;
     }
+
     function getActors($id):array{
         $sql = "SELECT A.*
                 FROM jouer AS J
@@ -35,18 +36,43 @@
     
         return $actors;
     }
-    function isIdExist($id, $table){
+
+    function getRNGFilm($limit):array{
         $sql = "SELECT * 
-                FROM $table 
-                WHERE EXISTS (
-                    SELECT * 
-                    FROM $table 
-                    WHERE id = :id
-                );
-        ";
+                FROM `movie` 
+                ORDER By rand() 
+                LIMIT ".$limit.";";
         $query = db()->prepare($sql);
-        $query->execute([$id]);
-        $movie = $query->fetch();
+        $query->execute();
+        $movie = $query->fetchAll();
+        return $movie;
+    }   
+
+    function getAllCategories(){
+        $query = db()->prepare("SELECT * FROM category ");
+        $query->execute();
+        $movies = $query->fetchAll();
+        
+        return $movies;
+    }
+
+    function getCategory($name){
+        $query = db()->prepare("SELECT id FROM category WHERE name = ?");
+        $query->execute([$name]);
+        $id = $query->fetch();
+
+        return $id;
+    }
+
+    function addMovie($title, $date, $synop, $duration, $cover, $catg){
+        $sql = 
+            "INSERT INTO `movie`(`title`, `released_at`, `description`, `duration`, `cover`, `id_category`)
+            VALUES (?, ?, ?, ?, ?, ?);
+            ";
+        
+        $query = db()->prepare($sql);
+        $success = $query->execute([$title, $date, $synop, $duration, $cover, $catg]);
+        return $success;
     }
 
     ?>

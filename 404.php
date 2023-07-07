@@ -2,11 +2,8 @@
     require './partials/header.php'; 
     require './config/movie_model.php';
 
-    $movies = getAllMovies();
-
-    
     $rng = rand(2, 4);
-    shuffle($movies);
+    $movies = getRNGFilm($rng);
 ?>
 
     <div class="container">

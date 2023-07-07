@@ -12,9 +12,11 @@
     $actors = getActors($movie_id);
 ?>
     <div class="container">
+
         <div class="row mb-3">
-            <span> <a href="films.php">Film</a>/<?= $request['title'] ?></span>
+            <span> <a href="films.php">Film</a> / <?= $request['title'] ?></span>
         </div>
+
         <div class="row">
             <div class="col-5">
                 <img src="uploads/<?= $request['cover']; ?>" class="rounded poster" alt="<?= $request["title"] ?>">
